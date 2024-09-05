@@ -1,0 +1,181 @@
+<html>
+    <head>
+        <!--Gupo encabezado-->
+        <header class="cabeza">
+            <a class="logo">
+                <img src="/img/SEGUNDA OPORTUNIDAD.jpg">
+                <h2 class="nombre-compañia">SEGUNDA OPORTUNIDAD</h2>
+            </a>
+            <nav class="nav">
+                <a href="/View/Pag_inicio.html" class="nav-link">Inicio</a>
+                <a href="#" class="nav-link">Servicios</a>
+                <a href="#" class="nav-link">¿Quienes somos?</a>
+                <a href="/View/Formulario_registro.html" class="nav-link">Registrarse</a>
+                <a href="/View/Formulario_inicio_de_sesion.html" class="nav-link">Iniciar sesion</a>
+            </nav>
+        </header>
+
+        <link rel="stylesheet" href="/CSS/normalize.css">
+        <link rel="stylesheet" href="/CSS/Estilos_registro.css">
+        <style type="text/css">
+            .formulario{
+                background-color: #e6e5e5;
+                border: solid;
+                padding-bottom: 10px;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            </style>
+    </head>
+    <body>
+        <main>
+            <!--Grupo: Nombre-->
+            <form action="" class="formulario" id="formulario">
+                <div class="formulario__grupo" id="grupo_nombre">
+                    <label for="nombre" class="formulario__label">Nombre</label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Ingresa tu nombre">
+                        <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                    </div>
+                    <p class="formulario__input-error">Ingrese un nombre valido.</p>
+                </div>
+
+                <!--Grupo: apellidos-->
+                <div class="formulario__grupo" id="grupo_apellido">
+                    <label for="apellido" class="formulario__label">Apellido</label>
+                    <div class="formulario__grupo-input">
+                        <input type="text" class="formulario__input" name="apellido" id="apellido" placeholder="Ingresa tu apellido">
+                        <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                    </div>
+                    <p class="formulario__input-error">Ingrese un apellido valido.</p>
+                </div>
+
+                <!--Grupo: Tipo de documento-->
+                <div class="formulario__grupo" id="grupo_tipo-de-documento">
+                    <label for="tipo de documento" class="formulario__label">Tipo de documento</label>
+                    <div class="formulario__grupo-input">
+                            <select class="formulario__input" name="tipo de documento" id="tipo_de_documento">
+                                <option value="1">Tarjeta de identidad</option>
+                                <option value="2">Cedula de ciudadania</option>
+                                <option value="3">Cedula de extranjeria</option>
+                                <option value="4">NUIP</option>
+                                <option value="5">Pasaporte</option>
+                            </select>
+                        </div>
+                        <p class="formulario__input-error">Ingrese un tipo de documento.</p>
+                    </div>
+            
+
+            <!--Grupo: Numero de decumento-->
+            <div class="formulario__grupo" id="grupo_numero_de_documento">
+                <label for="numero de documento" class="formulario__label">Numero de documento</label>
+                <div class="formulario__grupo-input">
+                    <input type="number" class="formulario__input" name="numero de documento" id="numero_de_documento" placeholder="Numero de documento">
+                    <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                </div>
+                <p class="formulario__input-error">Ingrese un numero de documento valido.</p>
+            </div>
+
+            <!--Grupo: Numero de celular-->
+            <div class="formulario__grupo" id="grupo_numero_de_celular">
+                <label for="numero de celular" class="formulario__label">Numero de celular</label>
+                <div class="formulario__grupo-input">
+                    <input type="number" class="formulario__input" name="numero de celular" id="numero_de_celular" placeholder="3123456789">
+                    <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                </div>
+                <p class="formulario__input-error">El numero debe tener maximo 10 digitos.</p>
+            </div>
+
+            <!--Grupo:Correo Electronico-->   
+            <div class="formulario__grupo" id="grupo_correo">
+                <label for="correo" class="formulario__label">Correo Electronico</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="correo" id="correo" placeholder="Correo@Correo.com">
+                    <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                </div>
+                <p class="formulario__input-error">Ingrese un correo electronico valido.</p>
+            </div>
+
+
+            <!--Grupo: Contraseña-->
+            <div class="formulario__grupo" id="grupo_password">
+                <label for="password" class="formulario__label">Contraseña</label>
+                <div class="formulario__grupo-input">
+                    <input type="password" class="formulario__input" name="password" id="password">
+                    <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                </div>
+                <p class="formulario__input-error">La contraseña debe contener de 8 a 12 cararcteres.</p>
+            </div>
+
+            <!--Grupo: Contraseña2-->
+            <div class="formulario__grupo" id="grupo_password2">
+                <label for="password2" class="formulario__label">Repetir Contraseña</label>
+                <div class="formulario__grupo-input">
+                    <input type="password" class="formulario__input" name="password2" id="password2">
+                    <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                </div>
+                <p class="formulario__input-error">Ambas contraseñas deben ser iguales.</p>
+            </div>
+
+            <!--Grupo: terminos y condiciones-->
+            <div class="formulario__grupo" id="grupo__terminos">
+                <label class="formulario__label">
+                    <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+                    Acepto los terminos y condiciones
+                </label>
+            </div>
+            <div class="formulario__mensaje" id="formulario__mensaje">
+                <p><i class="fa-solid fa-triangle-exclamation"></i> <b>Error</b> Por favor rellene el formulario correctamente </p>
+            </div>
+
+            <div class="formulario__grupo formulario__grupo-btn-enviar">
+                <button type="submit" class="formulario__btn">Enviar</button>
+                <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+            </div>
+        </form>
+        </main>
+
+        <!--Pie de pagina-->
+        <footer class="pie-pagina">
+            <div class="grupo-1">
+                <div class="box">
+                    <h2>SEGUNDA OPORTUNIDAD</h2>
+                    <p>Direccion</p>
+                    <i class="pie__pagina-direccion fa-solid fa-location-dot"></i><p>Bogota-Colombia</p>
+                    <p>Contacto</p>
+                    <i class="pie__pagina-celular fa-solid fa-phone"></i><p>+57 305 465 5590</p>
+                    <i class="pied__pagina-correo fa-solid fa-envelope"></i><p>segundaoportunidad@gmail.com</p>
+                </div>
+                <div class="box">
+                    <h2>¡NUESTRAS REDES SOCIALES!</h2>
+                    <div class="red-social">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-whatsapp"></a>
+                    </div>
+                </div>
+                <div class="box">
+                    <p>Nombre*</p>
+                    <input type="text"></input>
+                    <p>Correo electronico*</p>
+                    <input type="text">
+                    <p><h2>Mensaje*</h2></p>
+                    <Textarea id="widerTextarea" name="widerTextarea" rows="6"></Textarea>
+                </div>
+
+                <div class="box">
+                    <p><h2>MENU</h2></p>
+                    <p>Lavadoras y cecadoras</p>
+                    <p>Neveras y nevecones</p>
+                    <p>Televisores</p>
+                </div>
+            </div>
+            <div class="grupo-2">
+                <small>&copy; 2024 <b>SEGUNDA OOPORTUNIDAD</b> - Todos los Derechos Reservados</small>
+            </div>
+        </footer>
+    </body>
+    <script src="/JS/Fomulario.js"></script>
+        <script src="https://kit.fontawesome.com/2b200732eb.js" crossorigin="anonymous"></script>
+</html>

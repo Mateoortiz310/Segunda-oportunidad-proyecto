@@ -1,0 +1,108 @@
+<html>
+    <head>
+
+         <!--Gupo encabezado-->
+         <header class="cabeza">
+            <a class="logo">
+                <img src="/img/SEGUNDA OPORTUNIDAD.jpg">
+                <h2 class="nombre-compañia">SEGUNDA OPORTUNIDAD</h2>
+            </a>
+            <nav class="nav">
+                <a href="/View/Pag_inicio.html" class="nav-link">Inicio</a>
+                <a href="#" class="nav-link">Servicios</a>
+                <a href="#" class="nav-link">¿Quienes somos?</a>
+                <a href="/View/Formulario_registro.html" class="nav-link">Registrarse</a>
+                <a href="/View/Formulario_inicio_de_sesion.html" class="nav-link">Iniciar sesion</a>
+            </nav>
+        </header>
+
+        <link rel="stylesheet" href="/CSS/normalize.css">
+        <link rel="stylesheet" href="/CSS/Estilos_inicio_sesion.css">
+        <style type="text/css">
+            .formulario{
+                margin: 200px 100px 500px 570px;
+                background-color: #e6e5e5;
+            height: 400px;
+            width: 250px;
+            border: solid;
+            padding-top: 50px;
+            padding-left: 50px;
+            padding-right: 50px;
+            text-align: center;
+            padding: 10px;
+            }
+            </style>
+    </head>
+    <body>
+        <main>
+        <form action="" class="formulario" id="formulario" >
+            <!--Grupo: Numero de Correo Electronico-->
+            <div class="formulario__grupo" id="grupo_correo">
+                <label for="correo" class="formulario__label">Correo Electronico</label>
+                <div class="formulario__grupo-input">
+                    <input type="number" class="formulario__input" name="correo" id="correo" placeholder="Correo@Correo.com">
+                    <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                </div>
+                <p class="formulario__input-error">El correo electronico ingresado no se encuentra registrado.</p>
+            </div>
+
+        <!--Grupo: contraseña-->
+            <div class="formulario__grupo" id="grupo_password">
+                <label for="password" class="formulario__label">Contraseña</label>
+                <div class="formulario__grupo-input">
+                    <input type="password" class="formulario__input" name="password" id="password">
+                    <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                </div>
+                <p class="formulario__input-error">Contraseña Incorrecta intente nuevamente.</p>
+            </div>
+
+            <div class="formulario__grupo formulario__grupo-btn-enviar">
+                <br><button type="submit" class="formulario__btn">Enviar</button></br>
+                <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+            </div>
+        </form>
+        </main>
+
+        <!--Pie de pagina-->
+        <footer class="pie-pagina">
+            <div class="grupo-1">
+                <div class="box">
+                    <h2>SEGUNDA OPORTUNIDAD</h2>
+                    <p>Direccion</p>
+                    <i class="pie__pagina-direccion fa-solid fa-location-dot"></i><p>Bogota-Colombia</p>
+                    <p>Contacto</p>
+                    <i class="pie__pagina-celular fa-solid fa-phone"></i><p>+57 305 465 5590</p>
+                    <i class="pied__pagina-correo fa-solid fa-envelope"></i><p>segundaoportunidad@gmail.com</p>
+                </div>
+                <div class="box">
+                    <h2>¡NUESTRAS REDES SOCIALES!</h2>
+                    <div class="red-social">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-whatsapp"></a>
+                    </div>
+                </div>
+                <div class="box">
+                    <p>Nombre*</p>
+                    <input type="text"></input>
+                    <p>Correo electronico*</p>
+                    <input type="text">
+                    <p><h2>Mensaje*</h2></p>
+                    <Textarea id="widerTextarea" name="widerTextarea" rows="6"></Textarea>
+                </div>
+                <div class="box">
+                    <p><h2>MENU</h2></p>
+                    <p>Lavadoras y cecadoras</p>
+                    <p>Neveras y nevecones</p>
+                    <p>Televisores</p>
+                </div>
+            </div>
+            <div class="grupo-2">
+                <small>&copy; 2024 <b>SEGUNDA OOPORTUNIDAD</b> - Todos los Derechos Reservados</small>
+            </div>
+        </footer>
+    </body>
+    <script src="https://kit.fontawesome.com/2b200732eb.js" crossorigin="anonymous"></script>
+</html>
+
