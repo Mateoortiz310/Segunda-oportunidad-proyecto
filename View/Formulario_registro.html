@@ -29,7 +29,7 @@
     </head>
     <body>
         <main>
-            <!--Grupo: Nombre-->
+            <!--Grupo: Nombre-->   
             <form action="" class="formulario" id="formulario">
                 <div class="formulario__grupo" id="grupo_nombre">
                     <label for="nombre" class="formulario__label">Nombre</label>
@@ -70,7 +70,7 @@
             <div class="formulario__grupo" id="grupo_numero_de_documento">
                 <label for="numero de documento" class="formulario__label">Numero de documento</label>
                 <div class="formulario__grupo-input">
-                    <input type="number" class="formulario__input" name="numero de documento" id="numero_de_documento" placeholder="Numero de documento">
+                    <input type="text" class="formulario__input" name="numero_de_documento" id="numero_de_documento" placeholder="Numero de documento">
                     <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
                 </div>
                 <p class="formulario__input-error">Ingrese un numero de documento valido.</p>
@@ -80,7 +80,7 @@
             <div class="formulario__grupo" id="grupo_numero_de_celular">
                 <label for="numero de celular" class="formulario__label">Numero de celular</label>
                 <div class="formulario__grupo-input">
-                    <input type="number" class="formulario__input" name="numero de celular" id="numero_de_celular" placeholder="3123456789">
+                    <input type="text" class="formulario__input" name="numero_de_celular" id="numero_de_celular" placeholder="3123456789">
                     <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
                 </div>
                 <p class="formulario__input-error">El numero debe tener maximo 10 digitos.</p>
@@ -104,6 +104,7 @@
                     <input type="password" class="formulario__input" name="password" id="password">
                     <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
                 </div>
+                <img class="ojo" src="/img/close.svg" id="pass-icon" onclick="pass()">
                 <p class="formulario__input-error">La contraseña debe contener de 8 a 12 cararcteres.</p>
             </div>
 
@@ -176,6 +177,6 @@
             </div>
         </footer>
     </body>
-    <script src="/JS/Fomulario.js"></script>
-        <script src="https://kit.fontawesome.com/2b200732eb.js" crossorigin="anonymous"></script>
+    <script src="/JS/Formulario.js"></script>
+    <script src="https://kit.fontawesome.com/2b200732eb.js" crossorigin="anonymous"></script>
 </html>
