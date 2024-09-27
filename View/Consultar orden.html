@@ -1,0 +1,103 @@
+<html>
+<head>
+      <!--Gupo encabezado-->
+      <header class="cabeza">
+        <a class="logo">
+            <img src="/IMG/SEGUNDA OPORTUNIDAD.jpg">
+            <h2 class="nombre-compañia">SEGUNDA OPORTUNIDAD</h2>
+        </a>
+        <nav class="nav">
+            <a href="/View/Pag_inicio.html" class="nav-link">Inicio</a>
+            <a href="#" class="nav-link">Servicios</a>
+            <a href="/View/Consultar orden.html" class="nav-link">Consulta tu orden</a>
+            <a href="#" class="nav-link">¿Quienes somos?</a>
+            <a href="/View/Formulario_registro.html" class="nav-link">Registrarse</a>
+            <a href="/View/Formulario_inicio_de_sesion.html" class="nav-link">Iniciar sesion</a>
+        </nav>
+    </header>
+
+    <link rel="stylesheet" href="/CSS/normalize.css">
+    <link rel="stylesheet" href="/CSS/ESTILOS_CONSULTE_ORDEN.CSS">
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Segunda Oportunidad - Consulta de Órdenes</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <!-- Cuerpo de la página -->
+        <main>
+            <section class="consulta-orden">
+                <h1>Consulte su orden</h1>
+                <p><strong>Le proporcionamos información detallada sobre el estado de su orden de servicio. Por favor, consulte el estado ingresando el número de orden y su identificación, tal como se le indicó al recibir su producto.</strong></p>
+
+                
+                <form action="#" method="post">
+                    <!-- Identificación -->
+                    <div class="form-group">
+                        <label for="identificacion">Identificación</label>
+                        <input type="text" id="identificacion" name="identificacion" required>
+                    </div>
+                    
+                    <!-- Número de Orden -->
+                    <div class="form-group">
+                        <label for="orden">Número de Orden</label>
+                        <input type="text" id="orden" name="orden" required>
+                    </div>
+                    
+                    <!-- Captcha -->
+                    <div class="form-group">
+                        <label for="captcha">Captcha</label>
+                        <!-- Puedes integrar un captcha de Google aquí -->
+                        <input type="checkbox" id="captcha" name="captcha" required> No soy un robot
+                    </div>
+                    
+                    <!-- Botón de consultar -->
+                    <button type="submit">Consultar</button>
+                </form>
+            </section>
+        </main>
+    <!--Pie de pagina-->
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <h2>SEGUNDA OPORTUNIDAD</h2>
+                <p>Direccion</p>
+                <i class="pie__pagina-direccion fa-solid fa-location-dot"></i><p>Bogota-Colombia</p>
+                <p>Contacto</p>
+                <i class="pie__pagina-celular fa-solid fa-phone"></i><p>+57 305 465 5590</p>
+                <i class="pied__pagina-correo fa-solid fa-envelope"></i><p>segundaoportunidad@gmail.com</p>
+            </div>
+            <div class="box">
+                <h2>¡NUESTRAS REDES SOCIALES!</h2>
+                <div class="red-social">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-whatsapp"></a>
+                </div>
+            </div>
+            <div class="box">
+                <p>Nombre*</p>
+                <input type="text"></input>
+                <p>Correo electronico*</p>
+                <input type="text">
+                <p><h2>Mensaje*</h2></p>
+                <Textarea id="widerTextarea" name="widerTextarea" rows="6"></Textarea>
+            </div>
+            <div class="box3">
+                <p><h2>MENU</h2></p>
+                    <a href="#" class="nav-link">Lavadoras y cecadoras</a><br>
+                    <a href="#" class="nav-link">Neveras y nevecones</a><br>
+                    <a href="#" class="nav-link">Televisores</a>
+                    </div>
+                </div>
+            <div class="grupo-2">
+                <small>&copy; 2024 <b>SEGUNDA OOPORTUNIDAD</b> - Todos los Derechos Reservados</small>
+            </div>
+        </footer>
+    </body>
+<script src="https://kit.fontawesome.com/2b200732eb.js" crossorigin="anonymous"></script>
+</html>

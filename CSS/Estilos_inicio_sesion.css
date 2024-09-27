@@ -218,6 +218,16 @@ body{
         font-size: 15px;
     }
 
+    .box3 a{
+        color: #000;
+        font-weight: 600;
+        padding-right: 50px;
+    }
+    
+    .box3 a:hover{
+        color: #26f4f4;
+    }
+
     @media screen and (max-width:800px) {
         .pie-pagina .grupo-1{
             width: 100%;
